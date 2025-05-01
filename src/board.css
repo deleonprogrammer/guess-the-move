@@ -1,0 +1,67 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  /* So that the promotion options can be shown in the middle of the board, vertically.
+  The promotion options have absolute position, which looks for the closest parent with relative position to use
+  as a reference. */
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*
+  border-left: 2px solid black;
+  border-right: 2px solid black; */
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 75px;
+  border: 2px solid black;
+}
+
+/* Named like this, instead of simply a-file, because with the flipped board, it'll actually be the h-file. */
+.leftmost-file {
+  border-left: 2px solid black;
+}
+
+.rightmost-file {
+  border-right: 2px solid black;
+}
+
+.dark-square {
+  background-color: rgb(165, 153, 153);
+}
+
+/* Takes priority over the dark-square rule for coming later in the file. */
+.highlighted-square {
+  background-color: rgb(150, 150, 235);
+}
+
+.flip-board-button {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.flip-board-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

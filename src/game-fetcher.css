@@ -1,0 +1,87 @@
+.game-fecher-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous-player-button,
+.next-player-button {
+  background-color: white;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.previous-player-button:hover,
+.next-player-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.player-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-image {
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+}
+
+.player-image-gmbenjaminbok {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a7/BenjaminBokTata2025.jpg");
+}
+
+.player-image-gmbenjaminfinegold {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/65/2013_08_Ben_Finegold_%289430861911%29.png");
+}
+
+.player-image-danielnaroditsky {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/73/DanielNaroditsky16.jpg");
+}
+
+.player-description {
+  font-size: large;
+  border: 2px solid black;
+  width: 500px;
+}
+
+.game-fetcher-button {
+  background-color: rgb(150, 150, 235);
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.game-fetcher-button:hover {
+  cursor: pointer;
+  background-color: #ebeb96;
+  color: black;
+}
